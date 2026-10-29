@@ -1,0 +1,30 @@
+DAY 13: GIT & GITHUB CHEAT SHEET
+
+
+1. WHAT IS GIT?
+Git is a version control system. It tracks changes in your code so you can save your progress, go back to older versions, and collaborate with others.
+GitHub is a website where you host your Git repositories online.
+
+2. INITIAL SETUP (Do this once per project)
+git init                 --> Turns the current folder into a Git repository.
+git config --global user.name "Your Name"     --> Set your name
+git config --global user.email "your@email.com" --> Set your email
+
+3. THE HOLY TRINITY (The daily workflow)
+git status               --> Shows what files are changed/untracked.
+git add .                --> Stages ALL changed files to be committed.
+git commit -m "Message"  --> Saves a snapshot of the staged files with a message.
+
+4. CONNECTING TO GITHUB
+git remote add origin <URL>  --> Links your local repo to a GitHub repo.
+git branch -M main           --> Renames your main branch to 'main'.
+git push -u origin main      --> Pushes your code to GitHub for the first time.
+
+5. PUSHING FUTURE CHANGES
+git add .
+git commit -m "My new changes"
+git push                     --> (No need for -u origin main after the first time).
+
+6. CHECKING HISTORY
+git log                  --> Shows a list of all your past commits.
+git log --oneline        --> Shows a shorter version of the commit history.
